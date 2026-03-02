@@ -1,0 +1,136 @@
+{
+  "projectType": "sdk-library",
+  "projectName": "Avala TypeScript SDK",
+  "projectDescription": "Official TypeScript SDK and MCP server for building and managing ML annotation datasets with the Avala API",
+  "theme": "palm",
+  "primaryColor": "#6366f1",
+  "lightColor": "#818cf8",
+  "darkColor": "#4f46e5",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart",
+              "authentication"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "core/datasets",
+              "core/projects",
+              "core/tasks",
+              "core/exports"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/pagination",
+              "guides/error-handling",
+              "guides/storage-configs",
+              "guides/webhooks",
+              "guides/agents",
+              "guides/quality-targets",
+              "guides/consensus",
+              "guides/fleet-management"
+            ]
+          },
+          {
+            "group": "MCP Server",
+            "pages": [
+              "mcp/overview",
+              "mcp/installation",
+              "mcp/configuration",
+              "mcp/tools"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Client",
+            "pages": [
+              "api/client",
+              "api/errors"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "api/resources/datasets",
+              "api/resources/projects",
+              "api/resources/tasks",
+              "api/resources/exports",
+              "api/resources/storage-configs",
+              "api/resources/agents",
+              "api/resources/annotation-issues",
+              "api/resources/auto-label-jobs",
+              "api/resources/quality-targets",
+              "api/resources/consensus",
+              "api/resources/webhooks",
+              "api/resources/organizations",
+              "api/resources/slices",
+              "api/resources/fleet",
+              "api/resources/inference-providers"
+            ]
+          },
+          {
+            "group": "Types",
+            "pages": [
+              "api/types/common",
+              "api/types/datasets",
+              "api/types/projects",
+              "api/types/tasks",
+              "api/types/quality",
+              "api/types/fleet"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "TypeScript SDK with comprehensive type safety",
+    "MCP server for AI assistant integrations",
+    "Complete dataset and project management",
+    "Export and task workflow automation",
+    "Quality assurance and consensus tools",
+    "Fleet device monitoring and alerts",
+    "Webhook and storage integrations",
+    "Agent execution and auto-labeling"
+  ],
+  "publicApiSurface": [
+    "Avala (main client class)",
+    "avala.datasets (list, get, items, sequences)",
+    "avala.projects (list, get)",
+    "avala.tasks (list, get)",
+    "avala.exports (list, get, create)",
+    "avala.storageConfigs (list, create, test, delete)",
+    "avala.agents (list, get, create, execute)",
+    "avala.annotationIssues (list, get, create, update, delete)",
+    "avala.autoLabelJobs (list, get)",
+    "avala.qualityTargets (list, get, create, update, delete, evaluate)",
+    "avala.consensus (list, get, compute)",
+    "avala.webhooks (list, get, create, update, delete)",
+    "avala.webhookDeliveries (list, get)",
+    "avala.organizations (get, list members, invite, update member, remove member, list teams, create team, update team, delete team, list invitations)",
+    "avala.slices (list, get, items)",
+    "avala.fleet.devices (list, get, update)",
+    "avala.fleet.recordings (list, get)",
+    "avala.fleet.events (list, get, create)",
+    "avala.fleet.alerts (list, get, update)",
+    "avala.fleet.rules (list, get, create, update, delete)",
+    "avala.inferenceProviders (list, get, create, update, delete)",
+    "signup() (user signup function)",
+    "Error classes (AvalaError, AuthenticationError, NotFoundError, RateLimitError, ValidationError, ServerError)"
+  ]
+}
